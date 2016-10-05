@@ -1,5 +1,5 @@
 def toGexf[VD,ED](g:Graph[VD,ED]) : String = {
-    """<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n""" +
+    "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
     "<gexf xmlns=\"http://www.gexf.net/1.2draft\" version=\"1.2\">\n" +
     "  <graph mode=\"static\" defaultedgetype=\"directed\">\n" +
     "    <nodes>\n" +
