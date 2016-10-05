@@ -1,5 +1,5 @@
-def toGexf[VD,ED](g:Graph[VD,ED]) =
-    "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
+def toGexf[VD,ED](g:Graph[VD,ED]) : String = {
+    """<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n""" +
     "<gexf xmlns=\"http://www.gexf.net/1.2draft\" version=\"1.2\">\n" +
     "  <graph mode=\"static\" defaultedgetype=\"directed\">\n" +
     "    <nodes>\n" +
@@ -13,6 +13,7 @@ def toGexf[VD,ED](g:Graph[VD,ED]) =
     "    </edges>\n" +
     "  </graph>\n" +
     "</gexf>"
+}
 
 val pw = new java.io.PrintWriter("myGraph.gexf")
 pw.write(toGexf(myGraph))
